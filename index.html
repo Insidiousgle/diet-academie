@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Diét'Académie — mon BTS Diététique</title>
+<meta name="theme-color" content="#FBF6EE">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Diét'Académie">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icone.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icone-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="barre">
+  <button type="button" id="btn-retour" class="icone-btn" aria-label="Retour" hidden>‹</button>
+  <div id="barre-titre">Diét'Académie</div>
+  <button type="button" id="btn-reglages" class="icone-btn" aria-label="Réglages">⚙︎</button>
+</header>
+<main id="vue" tabindex="-1"></main>
+<div id="toast" role="status" aria-live="polite" hidden></div>
+<div id="modale" hidden>
+  <div class="modale-boite" role="dialog" aria-modal="true">
+    <p id="modale-texte"></p>
+    <div class="modale-actions">
+      <button type="button" id="modale-non" class="btn btn-doux">Annuler</button>
+      <button type="button" id="modale-oui" class="btn">Confirmer</button>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

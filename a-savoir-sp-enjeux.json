@@ -1,0 +1,272 @@
+{
+ "cours": "sp-enjeux",
+ "items": [
+  {
+   "fiche": 0,
+   "texte": "48 % des décès évitables (hommes < 75 ans)",
+   "mots": [
+    "48 %"
+   ]
+  },
+  {
+   "fiche": 0,
+   "texte": "Nord / Réunion : − 5 ans",
+   "mots": [
+    "5 ans"
+   ]
+  },
+  {
+   "fiche": 0,
+   "texte": "obésité 22,1 % HdF vs 14,2 % IdF",
+   "mots": [
+    "22,1 %",
+    "14,2 %"
+   ]
+  },
+  {
+   "fiche": 1,
+   "texte": "OMS 1946 : bien-être physique, mental, social",
+   "mots": [
+    "1946",
+    "physique, mental et social"
+   ]
+  },
+  {
+   "fiche": 1,
+   "texte": "Winslow 1920 : action collective organisée",
+   "mots": [
+    "Winslow",
+    "1920",
+    "action collective organisée"
+   ]
+  },
+  {
+   "fiche": 1,
+   "texte": "6 champs",
+   "mots": [
+    "Surveillance épidémiologique",
+    "Organisation des soins",
+    "Éducation pour la santé",
+    "Planification et évaluation",
+    "Promotion de la santé",
+    "Prévention"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "Ottawa 1986 : 5 axes",
+   "mots": [
+    "1986",
+    "Politiques publiques saines",
+    "Environnements favorables",
+    "Action communautaire",
+    "Compétences individuelles",
+    "Réorientation des services"
+   ]
+  },
+  {
+   "fiche": 3,
+   "texte": "5 cercles de Dahlgren",
+   "mots": [
+    "âge, sexe",
+    "Modes de vie individuels",
+    "Réseaux sociaux et communautaires",
+    "Conditions de vie et de travail",
+    "Conditions socio-économiques"
+   ]
+  },
+  {
+   "fiche": 4,
+   "texte": "primaire éviter · secondaire dépister · tertiaire limiter",
+   "mots": [
+    "Éviter",
+    "Dépister",
+    "Limiter les complications",
+    "rechutes"
+   ]
+  },
+  {
+   "fiche": 5,
+   "texte": "PNNS 2001, 4 versions",
+   "mots": [
+    "2001",
+    "vulnérables",
+    "socio-économique",
+    "systémique",
+    "littératie"
+   ]
+  },
+  {
+   "fiche": 5,
+   "texte": "SNS 2018-2022 · ODD 2 et 3",
+   "mots": [
+    "2018-2022",
+    "faim zéro",
+    "ODD 3"
+   ]
+  },
+  {
+   "fiche": 6,
+   "texte": "obésité 17 % (ObEpi 2020), 12 → 22 %",
+   "mots": [
+    "17 %",
+    "ObEpi",
+    "12 %",
+    "22 %"
+   ]
+  },
+  {
+   "fiche": 6,
+   "texte": "dénutrition 4-10 % domicile / 15-40 % institution (HAS)",
+   "mots": [
+    "10 %",
+    "40 %",
+    "HAS"
+   ]
+  },
+  {
+   "fiche": 6,
+   "texte": "anorexie = mortalité psy la plus élevée",
+   "mots": [
+    "anorexie mentale",
+    "mortalité"
+   ]
+  },
+  {
+   "fiche": 7,
+   "texte": "≈ 25 % de l'empreinte carbone",
+   "mots": [
+    "25 %",
+    "empreinte carbone"
+   ]
+  },
+  {
+   "fiche": 7,
+   "texte": "viande rouge ≤ 500 g/sem (~70 g/j)",
+   "mots": [
+    "500 g",
+    "70 g"
+   ]
+  },
+  {
+   "fiche": 7,
+   "texte": "8 millions à l'aide alimentaire",
+   "mots": [
+    "8 millions"
+   ]
+  },
+  {
+   "fiche": 7,
+   "texte": "littératie = savoir + savoir-faire",
+   "mots": [
+    "savoir + savoir-faire"
+   ]
+  },
+  {
+   "fiche": 8,
+   "texte": "gradient = continu, dose-réponse",
+   "mots": [
+    "tous les niveaux",
+    "dose-réponse"
+   ]
+  },
+  {
+   "fiche": 8,
+   "texte": "4,2 vs 2,1 portions",
+   "mots": [
+    "4,2 vs 2,1"
+   ]
+  },
+  {
+   "fiche": 8,
+   "texte": "Bourdieu",
+   "mots": [
+    "Bourdieu"
+   ]
+  },
+  {
+   "fiche": 8,
+   "texte": "INCA3 : 11 % (7 % modérée + 4 % sévère)",
+   "mots": [
+    "INCA3",
+    "11 %",
+    "7 %",
+    "4 %"
+   ]
+  },
+  {
+   "fiche": 8,
+   "texte": "paradoxe : surpoids + carences",
+   "mots": [
+    "surpoids",
+    "carenc"
+   ]
+  },
+  {
+   "fiche": 9,
+   "texte": "désert (rural, > 15 km) vs food swamp (urbain, fast-foods)",
+   "mots": [
+    "Désert alimentaire",
+    "Food swamp",
+    "15 km",
+    "rural"
+   ]
+  },
+  {
+   "fiche": 9,
+   "texte": "CLS, PRS",
+   "mots": [
+    "CLS",
+    "PRS"
+   ]
+  },
+  {
+   "fiche": 9,
+   "texte": "Vervins : 150 pers. âgées",
+   "mots": [
+    "Vervins",
+    "150"
+   ]
+  },
+  {
+   "fiche": 9,
+   "texte": "CRÉDOC 36 % → 52 %",
+   "mots": [
+    "CRÉDOC",
+    "36 %",
+    "52 %"
+   ]
+  },
+  {
+   "fiche": 10,
+   "texte": "universalisme proportionné : pour tous, intensité selon besoins",
+   "mots": [
+    "intensité",
+    "besoins"
+   ]
+  },
+  {
+   "fiche": 10,
+   "texte": "groupes de parole, cuisine, pairs-aidants",
+   "mots": [
+    "groupes de parole",
+    "pairs-aidants"
+   ]
+  },
+  {
+   "fiche": 10,
+   "texte": "Roubaix : 15 emplois, 200 familles",
+   "mots": [
+    "15 emplois",
+    "200 familles"
+   ]
+  },
+  {
+   "fiche": 10,
+   "texte": "évaluation différentielle",
+   "mots": [
+    "différentiel"
+   ]
+  }
+ ]
+}

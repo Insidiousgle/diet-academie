@@ -1,0 +1,37 @@
+DIÉT'ACADÉMIE — mettre l'appli en ligne sur GitHub Pages
+=========================================================
+
+PREMIÈRE MISE EN LIGNE (une seule fois)
+1. Sur github.com, bouton « + » en haut à droite → « New repository ».
+   Nom : diet-academie · Public · « Create repository » (pas besoin de cocher « Add a README file »).
+2. Sur la page qui s'ouvre, clique sur le lien « uploading an existing file ».
+   Ouvre ce dossier, sélectionne TOUS les fichiers (Cmd + A) et glisse-les dans la page.
+   Il n'y a aucun sous-dossier : tout part en une seule fois.
+   En bas : « Commit changes ».
+3. « Settings » → « Pages » (menu de gauche) → Source : « Deploy from a branch »,
+   Branch : « main », dossier « / (root) » → « Save ».
+4. Attends 1 à 2 minutes : l'adresse s'affiche en haut de la page Pages
+   (du type https://TON-PSEUDO.github.io/diet-academie/).
+5. Sur ton téléphone, ouvre cette adresse, puis :
+   - iPhone (Safari) : bouton Partager → « Sur l'écran d'accueil » ;
+   - Android (Chrome) : menu ⋮ → « Installer l'application ».
+   Elle marche ensuite même sans réseau.
+
+À CHAQUE NOUVELLE VAGUE DE COURS
+Je te dirai exactement quels fichiers remplacer ou ajouter. Tu fais « Add file » → « Upload files »,
+tu glisses ces fichiers (au même endroit, même nom) et « Commit changes ». GitHub remplace l'ancien.
+Ta progression n'est pas touchée : elle est dans ton navigateur, pas sur GitHub.
+
+CE QUI EST QUOI (tout est à plat, aucun sous-dossier)
+- index.html, style.css, app.js : l'appli elle-même.
+- sw.js, manifest.webmanifest, icone* : installation sur le téléphone et mode hors ligne.
+- nunito-*.woff2 : la police, embarquée pour marcher sans réseau.
+- catalogue.json : le sommaire de tout le BTS. Un fichier .json par cours (ex. sp-enjeux.json).
+- Les fichiers .mjs, .py, ids-publies.json, a-savoir-*.json : mon « atelier » (leçons avant mise
+  en forme, tests). Ils ne servent pas à l'appli, mais garde-les sur GitHub : j'en ai besoin
+  pour les prochaines vagues.
+
+À NE JAMAIS CHANGER
+- Clé de sauvegarde : dietacademie-progression-v1
+- Préfixe des codes de transfert : DIETACAD1-
+- Les identifiants de leçons déjà publiés (le fichier ids-publies.json les garde en mémoire).
