@@ -1,0 +1,272 @@
+{
+ "cours": "bc-glucides",
+ "items": [
+  {
+   "fiche": 1,
+   "texte": "4 kcal/g, 40-55 %",
+   "mots": [
+    "4 kcal",
+    "40 à 55 %"
+   ]
+  },
+  {
+   "fiche": 1,
+   "texte": "Oses / osides ; holosides / hétérosides",
+   "mots": [
+    "oses",
+    "osides",
+    "holosides",
+    "hétéroside"
+   ]
+  },
+  {
+   "fiche": 1,
+   "texte": "Oligosides / polyholosides ; homo- / hétéroglycannes",
+   "mots": [
+    "oligosides",
+    "polyholoside",
+    "homoglycanne",
+    "hétéroglycanne"
+   ]
+  },
+  {
+   "fiche": 1,
+   "texte": "Diholosides simples en diététique, osides en biochimie",
+   "mots": [
+    "diholoside",
+    "simple"
+   ]
+  },
+  {
+   "fiche": 1,
+   "texte": "Ose = carbonyle + –OH ; aldose / cétose",
+   "mots": [
+    "aldose",
+    "cétose"
+   ]
+  },
+  {
+   "fiche": 1,
+   "texte": "Fischer D ; pyrane / furane ; α / β",
+   "mots": [
+    "série D",
+    "pyrane",
+    "furane",
+    "α",
+    "β"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "Liaison osidique ; condensation / hydrolyse",
+   "mots": [
+    "liaison osidique",
+    "condensation",
+    "hydrolyse"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "Hétérosidique / N-osidique",
+   "mots": [
+    "hétérosidique",
+    "N-osidique"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "Réducteur / non réducteur",
+   "mots": [
+    "réducteur",
+    "non réducteur"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "Saccharose α1→β2, lactose β1→4, maltose α1→4, isomaltose α1→6, cellobiose β1→4",
+   "mots": [
+    "α1→β2",
+    "β1→4",
+    "α1→4",
+    "α1→6"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "Saccharase, lactase, maltase, isomaltase ; pas de cellulase",
+   "mots": [
+    "saccharase",
+    "lactase",
+    "maltase",
+    "isomaltase",
+    "cellulase"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "PS ; sucre inverti",
+   "mots": [
+    "1,3",
+    "0,7",
+    "0,2",
+    "inverti"
+   ]
+  },
+  {
+   "fiche": 3,
+   "texte": "Polyholosides > 10 oses",
+   "mots": [
+    "plus de 10"
+   ]
+  },
+  {
+   "fiche": 3,
+   "texte": "Amidon, glycogène / fibres",
+   "mots": [
+    "amidon",
+    "glycogène",
+    "fibres"
+   ]
+  },
+  {
+   "fiche": 3,
+   "texte": "Amylose bleu, amylopectine 20-30 rouge-violet",
+   "mots": [
+    "amylose",
+    "bleu",
+    "20 à 30",
+    "rouge-violet"
+   ]
+  },
+  {
+   "fiche": 3,
+   "texte": "Glycogène 8-10 brun",
+   "mots": [
+    "8 à 10",
+    "brun"
+   ]
+  },
+  {
+   "fiche": 3,
+   "texte": "Cellulose β1→4, pas d'enzyme ; hémicelluloses, pectines, lignine, amidon résistant",
+   "mots": [
+    "cellulose",
+    "hémicelluloses",
+    "pectines",
+    "lignine",
+    "amidon résistant"
+   ]
+  },
+  {
+   "fiche": 3,
+   "texte": "Effets : satiété, transit, fermentation, glycémie, lipides",
+   "mots": [
+    "satiété",
+    "transit",
+    "fermentation",
+    "glycémie",
+    "lipides"
+   ]
+  },
+  {
+   "fiche": 4,
+   "texte": "Dérivé / hétéroside",
+   "mots": [
+    "dérivé",
+    "aglycone"
+   ]
+  },
+  {
+   "fiche": 4,
+   "texte": "Acide glucuronique, conjugaison",
+   "mots": [
+    "glucuronique",
+    "conjugaison"
+   ]
+  },
+  {
+   "fiche": 4,
+   "texte": "Polyols, laxatifs",
+   "mots": [
+    "polyols",
+    "laxatif"
+   ]
+  },
+  {
+   "fiche": 4,
+   "texte": "Désoxyribose, osamines",
+   "mots": [
+    "désoxyribose",
+    "osamine"
+   ]
+  },
+  {
+   "fiche": 4,
+   "texte": "Acide phytique",
+   "mots": [
+    "phytique"
+   ]
+  },
+  {
+   "fiche": 4,
+   "texte": "Hétérosides : anthocyanes, saponines, digitaliques",
+   "mots": [
+    "anthocyanes",
+    "saponines",
+    "digitaliques"
+   ]
+  },
+  {
+   "fiche": 5,
+   "texte": "Énantiomères, épimères, anomères",
+   "mots": [
+    "énantiomères",
+    "épimères",
+    "anomères"
+   ]
+  },
+  {
+   "fiche": 5,
+   "texte": "2ⁿ ; α/β ≠ D/L ; D ≠ dextrogyre",
+   "mots": [
+    "2⁴",
+    "dextrogyre"
+   ]
+  },
+  {
+   "fiche": 5,
+   "texte": "Glucose +52,5°, fructose −92° ; mutarotation 36/64",
+   "mots": [
+    "52,5",
+    "92",
+    "36 %",
+    "64 %"
+   ]
+  },
+  {
+   "fiche": 5,
+   "texte": "Solubles, GLUT ; caramel, Maillard",
+   "mots": [
+    "GLUT",
+    "caramélisation",
+    "Maillard"
+   ]
+  },
+  {
+   "fiche": 5,
+   "texte": "Fehling, DNS",
+   "mots": [
+    "Fehling",
+    "DNS"
+   ]
+  },
+  {
+   "fiche": 5,
+   "texte": "Estérification glucose-6-P",
+   "mots": [
+    "glucose-6-P",
+    "piégé"
+   ]
+  }
+ ]
+}

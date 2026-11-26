@@ -1,0 +1,142 @@
+{
+ "cours": "bc-meta-glucides-1",
+ "items": [
+  {
+   "fiche": 1,
+   "texte": "Bouche amylase salivaire pH 7 ; estomac pH 3",
+   "mots": [
+    "amylase salivaire",
+    "pH 3"
+   ]
+  },
+  {
+   "fiche": 1,
+   "texte": "Duodénum amylase pancréatique → maltose + isomaltose",
+   "mots": [
+    "amylase pancréatique",
+    "isomaltose"
+   ]
+  },
+  {
+   "fiche": 1,
+   "texte": "Bordure en brosse : 4 glucidases → oses",
+   "mots": [
+    "bordure en brosse",
+    "oses"
+   ]
+  },
+  {
+   "fiche": 1,
+   "texte": "SGLT, GLUT2, pompe Na⁺/K⁺, actif secondaire, 10 % paracellulaire",
+   "mots": [
+    "SGLT1",
+    "GLUT2",
+    "Na⁺/K⁺",
+    "actif secondaire",
+    "10 %"
+   ]
+  },
+  {
+   "fiche": 1,
+   "texte": "Veine porte, foie 30-40 %, GLUT1/3, GLUT2, GLUT4",
+   "mots": [
+    "veine porte",
+    "30 à 40 %",
+    "GLUT4"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "Cytosol : 2 pyruvates + 2 ATP + 2 NADH,H⁺",
+   "mots": [
+    "cytosol",
+    "2 pyruvates",
+    "2 ATP"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "10 réactions, 3 étapes",
+   "mots": [
+    "10 réactions",
+    "3 étapes"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "3 irréversibles : hexokinase, PFK-1, pyruvate kinase",
+   "mots": [
+    "hexokinase",
+    "PFK-1",
+    "pyruvate kinase",
+    "irréversible"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "Une seule oxydation : réaction 6",
+   "mots": [
+    "réaction 6",
+    "oxydation"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "Mg²⁺ cofacteur ; réaction 7 réversible",
+   "mots": [
+    "Mg²⁺",
+    "réversible"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "NAD⁺ doit être réoxydé",
+   "mots": [
+    "NAD⁺",
+    "bloque"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "Aérobie : 8 ATP",
+   "mots": [
+    "8 ATP",
+    "navette"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "Anaérobie : LDH, lactate, Cori",
+   "mots": [
+    "LDH",
+    "lactate",
+    "Cori"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "Hématies : pas de mitochondries",
+   "mots": [
+    "hématies",
+    "mitochondries"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "4 fois / 19 fois moins rentable",
+   "mots": [
+    "4 fois",
+    "19 fois"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "Régulation : insuline, ATP ⊣ PFK-1, glucagon",
+   "mots": [
+    "insuline",
+    "glucagon",
+    "allostérique"
+   ]
+  }
+ ]
+}

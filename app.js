@@ -712,6 +712,7 @@ function actionTableau(a, anime) {
       return ecrireTexte(el, a.x, anime);
     case 'ligne':
       el = document.createElement('div'); el.className = 'tb-ligne' + (a.taille ? ' ' + a.taille : '') + (a.decale ? ' decale' : '');
+      if (a.taille === 'eq') { el.innerHTML = '<span>' + a.x + '</span>'; t.appendChild(el); C.derniere = el; if (anime) el.classList.add('apparait'); return anime ? 500 : 0; }
       el.style.color = COUL_MARQUEUR[a.c || 'noir'];
       if (a.puce) { var p = document.createElement('span'); p.className = 'tb-puce'; p.textContent = a.puce; el.appendChild(p); }
       var s = document.createElement('span'); el.appendChild(s); t.appendChild(el); C.derniere = el;
@@ -731,20 +732,34 @@ function actionTableau(a, anime) {
       for (k = 0; k < n; k++) { var rr = 96 * (k + 1) / n; svg += '<text class="anneau-n" data-n="' + (k + 1) + '" x="100" y="' + (k === 0 ? 106 : 100 - rr + 96 / n / 2 + 6) + '" text-anchor="middle">' + (k + 1) + '</text>'; }
       svg += '</svg>';
       el.innerHTML = svg + '<div class="tb-legende">' + a.items.map(function (it, k) { return '<div class="leg" data-n="' + (k + 1) + '"><i style="background:' + COULEURS_CERCLES[k % 5] + '">' + (k + 1) + '</i><span><b>' + it.titre + '</b>' + (it.x ? '<small>' + it.x + '</small>' : '') + '</span></div>'; }).join('') + '</div>';
-      t.appendChild(el); C.widget = el; return 0;
+      t.appendChild(el); C.widget = el; C.derniere = el.querySelector('svg') || el; return 0;
     case 'rangees':
       el = document.createElement('div'); el.className = 'tb-rangees';
       el.innerHTML = a.items.map(function (it, k) { return '<div class="rangee" data-n="' + (k + 1) + '" style="--c:' + COUL_MARQUEUR[it.c || 'bleu'] + '"><div class="rg-titre">' + it.titre + '</div>' + (it.sous ? '<div class="rg-sous">' + it.sous + '</div>' : '') + (it.x ? '<div class="rg-x">' + it.x + '</div>' : '') + '</div>'; }).join('<div class="rg-fleche">↓</div>');
       t.appendChild(el); C.widget = el; return 0;
+    case 'grille':
+      el = document.createElement('div'); el.className = 'tb-grille-boite';
+      el.innerHTML = '<table class="tb-grille"><thead><tr>' + a.entetes.map(function (h) { return '<th>' + h + '</th>'; }).join('') + '</tr></thead><tbody>' + a.lignes.map(function (l, k) { return '<tr data-n="' + (k + 1) + '" class="' + (a.tout ? 'visible fixe' : '') + '">' + l.map(function (c) { return '<td>' + c + '</td>'; }).join('') + '</tr>'; }).join('') + '</tbody></table>';
+      t.appendChild(el); C.widget = el; C.derniere = a.tout ? el : (el.querySelector('thead') || el); return anime && a.tout ? 400 : 0;
     case 'montre':
       if (!C.widget) return 0;
       C.widget.querySelectorAll('.ici').forEach(function (x) { x.classList.remove('ici'); });
       C.widget.querySelectorAll('[data-n="' + a.n + '"]').forEach(function (x) { x.classList.add('visible'); if (!anime) x.classList.add('fixe'); if (anime) x.classList.add('ici'); });
       var f = C.widget.querySelectorAll('.rg-fleche')[a.n - 2]; if (f) f.classList.add('visible');
-      C.derniere = C.widget.querySelector('.leg[data-n="' + a.n + '"], .rangee[data-n="' + a.n + '"]') || C.derniere;
+      C.derniere = C.widget.querySelector('.leg[data-n="' + a.n + '"], .rangee[data-n="' + a.n + '"], tr[data-n="' + a.n + '"]') || C.derniere;
       return anime ? 700 : 0;
   }
   return 0;
+}
+function voirDerniere() {
+  var tb = $('#tableau'), el = C && C.derniere;
+  if (!tb || !el || !tb.contains(el)) return;
+  var bas = el.offsetTop + el.offsetHeight - tb.clientHeight + 20;
+  var haut = el.offsetTop - 12;
+  var cible = tb.scrollTop;
+  if (bas > tb.scrollTop) cible = Math.min(bas, haut);
+  if (haut < tb.scrollTop) cible = haut;
+  if (cible !== tb.scrollTop) tb.scrollTo({ top: Math.max(0, cible), behavior: 'smooth' });
 }
 function humeur(h) { var z = $('#prof-zone'); if (!z) return; z.className = 'prof-zone' + (h ? ' ' + h : ''); }
 function allerEtape(i, reconstruire) {
@@ -796,7 +811,7 @@ function allerEtape(i, reconstruire) {
   (function suivante() {
     if (!C || C.i !== i || k2 >= actions2.length) return;
     var d = actionTableau(actions2[k2++], true);
-    var tb = $('#tableau'); if (tb) tb.scrollTo({ top: tb.scrollHeight, behavior: 'smooth' });
+    voirDerniere();
     C.minuteurBoard = setTimeout(suivante, Math.max(d, 300) + 250);
   })();
   parlerProf(e.dit, e.humeur || (actions2.length ? 'pointe' : ''));

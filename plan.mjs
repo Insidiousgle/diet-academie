@@ -67,7 +67,19 @@ export default {
       id: 'sciences', titre: 'Sciences', emoji: '🧪',
       sous: 'Biochimie, physiologie, physiopathologie… ce qui se passe dans le corps',
       matieres: [
-        { id: 'biochimie', titre: 'Biochimie', emoji: '⚗️', sections: [] },
+        {
+          id: 'biochimie', titre: 'Biochimie', emoji: '⚗️',
+          sections: [
+            { titre: 'Biochimie structurale', cours: [
+              { id: 'bc-chimie', titre: 'Rappels de chimie, eau et minéraux', emoji: '⚛️', src: 'bc-chimie' },
+              { id: 'bc-glucides', titre: 'Les glucides : structure', emoji: '🍞', src: 'bc-glucides' }
+            ] },
+            { titre: 'Métabolisme', cours: [
+              { id: 'bc-meta-glucides-1', titre: 'Métabolisme des glucides (1) : digestion et glycolyse', emoji: '🔥', src: 'bc-meta-glucides-1' },
+              { id: 'bc-meta-glucides-2', titre: 'Métabolisme des glucides (2) : Krebs et autres voies', emoji: '🔄', src: 'bc-meta-glucides-2' }
+            ] }
+          ]
+        },
         { id: 'physiologie', titre: 'Physiologie', emoji: '🫀', sections: [] },
         { id: 'physiopathologie', titre: 'Physiopathologie', emoji: '🩻', sections: [] }
       ]

@@ -37,3 +37,5 @@ export const POST = (x, genre) => ({ t: 'postit', x, genre: genre || 'cle' });
 export const CERC = (items) => ({ t: 'cercles', items });
 export const RANG = (items) => ({ t: 'rangees', items });
 export const MONTRE = (n) => ({ t: 'montre', n });
+export const GRI = (entetes, lignes, tout) => ({ t: 'grille', entetes, lignes, ...(tout ? { tout: true } : {}) });
+export const EQ = (x) => ({ t: 'ligne', x, taille: 'eq' });

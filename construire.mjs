@@ -10,6 +10,28 @@ const REGISTRE = path.join(RACINE, 'ids-publies.json');
 const erreurs = [], avert = [];
 const TYPES_BLOCS = new Set(['p', 'liste', 'essentiel', 'astuce', 'cle', 'piege', 'donc', 'imagine', 'citation', 'perso', 'chiffre', 'tableau', 'duo', 'etapes', 'frise', 'niveaux', 'cercles', 'retourne', 'lien']);
 
+// Version texte d'une leçon, fabriquée à partir du mode cours (ce que dit Céline + les schémas du tableau)
+function ecransDepuisClasse(etapes) {
+  const ecrans = []; let cur = [], nbEtapes = 0;
+  const couper = () => { if (cur.length) ecrans.push(cur); cur = []; nbEtapes = 0; };
+  for (const e of etapes) {
+    const tab = e.tab || [];
+    if (tab.some((a) => a.t === 'efface') && nbEtapes) couper();
+    cur.push({ t: 'p', x: e.dit });
+    for (const a of tab) {
+      if (a.t === 'postit') cur.push({ t: a.genre === 'astuce' ? 'astuce' : a.genre === 'piege' ? 'piege' : 'cle', x: a.x });
+      else if (a.t === 'rangees') cur.push({ t: 'etapes', items: a.items.map((it) => ({ titre: it.titre, x: [it.sous, it.x].filter(Boolean).join(' — ') })) });
+      else if (a.t === 'cercles') cur.push({ t: 'cercles', titre: '', couches: a.items });
+      else if (a.t === 'grille') cur.push({ t: 'tableau', entetes: a.entetes, lignes: a.lignes });
+      else if (a.t === 'ligne' && a.taille === 'eq') cur.push({ t: 'chiffre', n: '⚗️', x: a.x });
+    }
+    nbEtapes++;
+    if (nbEtapes >= 3) couper();
+  }
+  couper();
+  return ecrans;
+}
+
 const plan = (await import(pathToFileURL(path.join(SRC, 'plan.mjs')))).default;
 const tousIdsLecons = new Set(), tousIdsCartes = new Set(), idsCours = new Set();
 const cours = {};
@@ -22,6 +44,7 @@ for (const u of plan.univers) for (const m of u.matieres) for (const s of m.sect
   if (mod.id !== c.id) erreurs.push(`Le fichier ${c.src} a l'id ${mod.id} au lieu de ${c.id}`);
   cours[c.id] = mod;
   for (const l of mod.lecons) {
+    if (!l.ecrans && l.classe) l.ecrans = ecransDepuisClasse(l.classe);
     if (tousIdsLecons.has(l.id)) erreurs.push(`Id de leçon en double : ${l.id}`);
     tousIdsLecons.add(l.id);
     if (!l.titre || !l.fiche) erreurs.push(`${l.id} : titre ou fiche manquant`);
@@ -37,7 +60,7 @@ for (const u of plan.univers) for (const m of u.matieres) for (const s of m.sect
     });
     if (!l.classe) avert.push(`${l.id} : pas de mode cours`);
     if (l.classe) {
-      const ACT = new Set(['titre', 'ligne', 'efface', 'souligne', 'postit', 'cercles', 'rangees', 'montre']);
+      const ACT = new Set(['titre', 'ligne', 'efface', 'souligne', 'postit', 'cercles', 'rangees', 'montre', 'grille']);
       l.classe.forEach((e, i) => {
         if (!e.dit) erreurs.push(`${l.id} : étape de cours ${i} sans texte du prof`);
         (e.tab || []).forEach((a) => { if (!ACT.has(a.t)) erreurs.push(`${l.id} : action de tableau inconnue « ${a.t} »`); });

@@ -9,9 +9,15 @@ class S(http.server.SimpleHTTPRequestHandler):
 srv = socketserver.TCPServer(('127.0.0.1', 0), functools.partial(S, directory=str(RACINE)))
 threading.Thread(target=srv.serve_forever, daemon=True).start()
 URL = f'http://127.0.0.1:{srv.server_address[1]}/index.html'
-c = json.loads((RACINE / 'sp-enjeux.json').read_text())
+cat = json.loads((RACINE / 'catalogue.json').read_text())
+tous = []
+for u in cat['univers']:
+    for m in u['matieres']:
+        for se in m['sections']:
+            for co in se['cours']:
+                if co.get('fichier'): tous += json.loads((RACINE / co['fichier']).read_text())['lecons']
 import os
-lecons = [l for l in c['lecons'] if l.get('classe') and (not os.environ.get('SEUL') or l['id'] in os.environ['SEUL'])]
+lecons = [l for l in tous if l.get('classe') and (not os.environ.get('SEUL') or l['id'] in os.environ['SEUL'])]
 erreurs = []
 with sync_playwright() as p:
     nav = p.chromium.launch(executable_path='/usr/bin/google-chrome')
@@ -27,7 +33,7 @@ with sync_playwright() as p:
             for i in range(n):
                 page.wait_for_timeout(200)
                 if not page.url.endswith('/' + str(i)): erreurs.append(f'{lec["id"]} : étape attendue {i}, url {page.url[-25:]}'); print(erreurs[-1])
-                if CAPT and (nomvp == 'tel' or i in (3, n - 1)):
+                if CAPT and lec['id'] in os.environ.get('CAPT_IDS', '') and (nomvp == 'tel' or i in (3, n - 1)):
                     page.wait_for_timeout(3200 if i in (1, 3, n - 1) else 2600)
                     page.screenshot(path=str(CAPT / f'{nomvp}-{lec["id"]}-{i:02d}.png'))
                 if not page.is_visible('#bulle-suite'):
@@ -50,11 +56,11 @@ with sync_playwright() as p:
                             if txt != cible[pos]: page.click(f'[data-action=monter][data-p="{act.index(cible[pos])}"]'); break
                     page.click('[data-action=valider-ordre]')
                 page.wait_for_selector('.retour-q.ok')
-                if CAPT and nomvp == 'tel' and qi == 0: page.wait_for_timeout(1500); page.screenshot(path=str(CAPT / f'tel-{lec["id"]}-quiz.png'))
+                if CAPT and lec['id'] in os.environ.get('CAPT_IDS', '') and nomvp == 'tel' and qi == 0: page.wait_for_timeout(1500); page.screenshot(path=str(CAPT / f'tel-{lec["id"]}-quiz.png'))
                 page.wait_for_selector('#btn-suiv:visible'); page.click('#btn-suiv'); page.wait_for_timeout(80)
                 if page.query_selector('.tb-quiz .retour-q') and page.is_visible('#btn-suiv'): page.click('#btn-suiv')
             page.wait_for_selector('.tb-actions')
-            if CAPT and nomvp == 'tel': page.wait_for_timeout(1200); page.screenshot(path=str(CAPT / f'tel-{lec["id"]}-fin.png'))
+            if CAPT and lec['id'] in os.environ.get('CAPT_IDS', '') and nomvp == 'tel': page.wait_for_timeout(1200); page.screenshot(path=str(CAPT / f'tel-{lec["id"]}-fin.png'))
             fait = page.evaluate(f'!!(window.__bouchees.etat().lecons["{lec["id"]}"] || {{}}).fait')
             if not fait: erreurs.append(f'{lec["id"]} non marquée faite ({nomvp})')
             large = page.evaluate('document.documentElement.scrollWidth')

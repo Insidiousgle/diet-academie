@@ -1,0 +1,308 @@
+{
+ "cours": "bc-chimie",
+ "items": [
+  {
+   "fiche": 1,
+   "texte": "Atome = noyau (protons, neutrons) + électrons ; neutre",
+   "mots": [
+    "protons",
+    "neutrons",
+    "électrons",
+    "neutre"
+   ]
+  },
+  {
+   "fiche": 1,
+   "texte": "Z = protons = électrons ; A = protons + neutrons ; neutrons = A − Z",
+   "mots": [
+    "Z",
+    "A",
+    "A − Z"
+   ]
+  },
+  {
+   "fiche": 1,
+   "texte": "Couches K 2, L 8, M 18 (2n²) ; couche de valence",
+   "mots": [
+    "2n²",
+    "18",
+    "valence"
+   ]
+  },
+  {
+   "fiche": 1,
+   "texte": "Octet 8 e⁻, duet 2 e⁻ pour H",
+   "mots": [
+    "octet",
+    "duet"
+   ]
+  },
+  {
+   "fiche": 1,
+   "texte": "Lewis : célibataires = liaisons (H 1, O 2, N 3, C 4)",
+   "mots": [
+    "célibataire",
+    "liaisons"
+   ]
+  },
+  {
+   "fiche": 1,
+   "texte": "Électronégativité O > N > C > H",
+   "mots": [
+    "électronégativité",
+    "3,44",
+    "2,55"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "Covalente = partage, forte",
+   "mots": [
+    "paire",
+    "forte"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "Valence H 1, O 2, S 2, N 3, C 4, P 5",
+   "mots": [
+    "valence",
+    "P"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "Ionique = transfert : cation, anion, NaCl",
+   "mots": [
+    "cation",
+    "anion",
+    "NaCl"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "Δ < 0,4 / 0,4-1,7 / > 1,7",
+   "mots": [
+    "0,4",
+    "1,7"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "O–H polaire, C–H apolaire",
+   "mots": [
+    "O–H",
+    "C–H"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "Liaison H faible, nombreuse, –OH hydrophiles",
+   "mots": [
+    "liaison hydrogène",
+    "hydrophile"
+   ]
+  },
+  {
+   "fiche": 3,
+   "texte": "Formules brute, développée, semi-développée",
+   "mots": [
+    "brute",
+    "semi-développée"
+   ]
+  },
+  {
+   "fiche": 3,
+   "texte": "Isomères C₆H₁₂O₆",
+   "mots": [
+    "isomères",
+    "C₆H₁₂O₆"
+   ]
+  },
+  {
+   "fiche": 3,
+   "texte": "Alcool I° → aldéhyde, II° → cétone",
+   "mots": [
+    "aldéhyde",
+    "cétone"
+   ]
+  },
+  {
+   "fiche": 3,
+   "texte": "Aldéhyde Fehling +, cétone ne s'oxyde pas",
+   "mots": [
+    "Fehling"
+   ]
+  },
+  {
+   "fiche": 3,
+   "texte": "Acide carboxylique : ester, thioester, peptidique",
+   "mots": [
+    "ester",
+    "thioester",
+    "peptidique"
+   ]
+  },
+  {
+   "fiche": 3,
+   "texte": "Amine capte H⁺ ; thiol ponts disulfures",
+   "mots": [
+    "R–NH₃⁺",
+    "disulfure"
+   ]
+  },
+  {
+   "fiche": 4,
+   "texte": "Réactions dans l'eau, enzymes",
+   "mots": [
+    "enzyme"
+   ]
+  },
+  {
+   "fiche": 4,
+   "texte": "Condensation / hydrolyse",
+   "mots": [
+    "condensation",
+    "hydrolyse"
+   ]
+  },
+  {
+   "fiche": 4,
+   "texte": "Hydratation (fumarase) / déshydratation",
+   "mots": [
+    "hydratation",
+    "déshydratation"
+   ]
+  },
+  {
+   "fiche": 4,
+   "texte": "Oxydation = −2 e⁻ −2 H⁺ ; NAD⁺/FAD ; chaîne respiratoire",
+   "mots": [
+    "2 e⁻",
+    "NAD⁺",
+    "chaîne respiratoire"
+   ]
+  },
+  {
+   "fiche": 4,
+   "texte": "Kinase, phosphatase, isomérase",
+   "mots": [
+    "kinase",
+    "phosphatase",
+    "isomérase"
+   ]
+  },
+  {
+   "fiche": 4,
+   "texte": "Décarboxylation ; loi d'action de masse",
+   "mots": [
+    "décarboxylation",
+    "sens 1"
+   ]
+  },
+  {
+   "fiche": 5,
+   "texte": "Acide cède H⁺, base fixe H⁺",
+   "mots": [
+    "céd",
+    "fixe"
+   ]
+  },
+  {
+   "fiche": 5,
+   "texte": "pH = −log[H⁺], 0 à 14, 7 neutre",
+   "mots": [
+    "log",
+    "neutre"
+   ]
+  },
+  {
+   "fiche": 5,
+   "texte": "Sang 7,35-7,45 ; acidose, alcalose",
+   "mots": [
+    "7,35",
+    "acidose",
+    "alcalose"
+   ]
+  },
+  {
+   "fiche": 5,
+   "texte": "Acide fort HCl / faible R–COOH",
+   "mots": [
+    "HCl",
+    "faible"
+   ]
+  },
+  {
+   "fiche": 5,
+   "texte": "pKa = demi-dissociation",
+   "mots": [
+    "pKa",
+    "demi-dissociation"
+   ]
+  },
+  {
+   "fiche": 5,
+   "texte": "pH 7,4 : R–COO⁻, R–NH₃⁺ ; urine NH₄⁺",
+   "mots": [
+    "R–COO⁻",
+    "NH₄⁺"
+   ]
+  },
+  {
+   "fiche": 6,
+   "texte": "Inorganiques / organiques",
+   "mots": [
+    "inorganiques",
+    "organiques"
+   ]
+  },
+  {
+   "fiche": 6,
+   "texte": "Eau 65 % adulte, 70 % enfant, 60 % âgé ; plasma 80 %, adipeux 20 %",
+   "mots": [
+    "65 %",
+    "70 %",
+    "60 %",
+    "80 %",
+    "20 %"
+   ]
+  },
+  {
+   "fiche": 6,
+   "texte": "2/3 intracellulaire, 1/3 extracellulaire",
+   "mots": [
+    "2/3",
+    "1/3"
+   ]
+  },
+  {
+   "fiche": 6,
+   "texte": "Rôles : solvant, réactif, volant thermique, protection",
+   "mots": [
+    "solvant",
+    "réactif",
+    "volant thermique",
+    "protection"
+   ]
+  },
+  {
+   "fiche": 6,
+   "texte": "Électrolytes ; influx nerveux, Ca²⁺, Fe²⁺, cofacteurs",
+   "mots": [
+    "électrolytes",
+    "Fe²⁺",
+    "cofacteurs"
+   ]
+  },
+  {
+   "fiche": 6,
+   "texte": "Macroéléments, microéléments, oligoéléments",
+   "mots": [
+    "macroéléments",
+    "microéléments",
+    "oligoéléments"
+   ]
+  }
+ ]
+}

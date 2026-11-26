@@ -360,3 +360,18 @@ body.mode-classe{overflow:hidden}
   .tableau{font-size:1.12rem}
   .tb-cercles svg{width:200px}
 }
+
+/* Biochimie : équations et tableaux au tableau */
+.tb-ligne.eq{display:block;width:auto;max-width:none;margin:10px 0;padding:9px 12px;background:#F2F5F9;border-left:4px solid #1F4E9C;border-radius:8px;font-weight:800;font-size:.95rem;color:#1F4E9C!important;overflow-x:auto;white-space:nowrap}
+.tb-ligne.eq.apparait{animation:apparait .45s}
+.tb-grille-boite{overflow-x:auto;margin:8px 0}
+.tb-grille{border-collapse:collapse;font-size:.86rem;min-width:100%}
+.tb-grille:has(th:nth-child(5)){font-size:.74rem}
+.tb-grille:has(th:nth-child(5)) th,.tb-grille:has(th:nth-child(5)) td{padding:5px 5px}
+.tb-grille th{background:#1F4E9C;color:#fff;font-weight:800;padding:6px 8px;text-align:left;white-space:nowrap}
+.tb-grille td{padding:6px 8px;border-bottom:1px solid #E3E7EC;vertical-align:top}
+.tb-grille td:first-child{font-weight:800;color:#1F4E9C}
+.tb-grille tbody tr{opacity:0;transition:opacity .45s}
+.tb-grille tbody tr.visible{opacity:1}
+.tb-grille tbody tr.fixe{transition:none}
+.tb-grille tbody tr.ici td{background:rgba(242,179,61,.18)}

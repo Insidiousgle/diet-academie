@@ -1,6 +1,6 @@
 """Test automatique de Diét'Académie : joue toutes les leçons et toutes les questions dans un vrai navigateur.
 Usage : python3 tester.py [dossier_captures]"""
-import json, sys, threading, http.server, socketserver, functools, pathlib, re, time
+import json, sys, html, os, threading, http.server, socketserver, functools, pathlib, re, time
 from playwright.sync_api import sync_playwright
 
 RACINE = pathlib.Path(__file__).resolve().parent
@@ -77,8 +77,10 @@ with sync_playwright() as p:
     page.click('[data-vers="#/c/sp-enjeux"]'); page.wait_for_selector('.lecon-ligne'); capt(page, '04-cours')
 
     nb_lecons = nb_q = 0
+    joues = []
     for cid, c in cours.items():
         for li, lec in enumerate(c['lecons']):
+            if os.environ.get('LECONS') and lec['id'] not in os.environ['LECONS'].split(): continue
             page.goto(f'{URL}#/l/{lec["id"]}'); page.wait_for_selector('.ecran h1')
             for e in range(len(lec['ecrans'])):
                 for b in page.query_selector_all('[data-action=retourner]'): b.click()
@@ -93,12 +95,12 @@ with sync_playwright() as p:
                 page.click('[data-action=q-suiv]')
             page.wait_for_selector('.fete')
             if li == 0: capt(page, 'fin-lecon')
-            nb_lecons += 1
+            nb_lecons += 1; joues.append(lec)
 
     etat = page.evaluate('window.__bouchees.etat()')
     faites = sum(1 for v in etat['lecons'].values() if v.get('fait'))
     if faites != nb_lecons: erreurs.append(f'{faites} leçons marquées faites sur {nb_lecons}')
-    total_q = sum(len(l['questions']) + len(l.get('revision', [])) for c in cours.values() for l in c['lecons'])
+    total_q = sum(len(l['questions']) + len(l.get('revision', [])) for l in joues)
     if len(etat['cartes']) != total_q: erreurs.append(f'{len(etat["cartes"])} cartes de révision au lieu de {total_q}')
 
     # Révisions : on rend toutes les cartes « dues », puis on joue plusieurs sessions (justes et fausses)
@@ -117,7 +119,7 @@ with sync_playwright() as p:
         while page.query_selector('.question') and not page.query_selector('.fete'):
             # retrouver la question affichée via l'état interne
             cid = page.evaluate("() => { const t = document.querySelector('.question h1').innerHTML; return t; }")
-            q = next((qq for qq in index_q.values() if qq['q'] == cid), None)
+            q = next((qq for qq in index_q.values() if html.unescape(qq['q']) == html.unescape(cid)), None)
             if q is None: erreurs.append('Question de révision introuvable : ' + cid[:60]); break
             juste = (vus % 3 != 0)
             if vus == 2: capt(page, 'R-question')
@@ -128,13 +130,17 @@ with sync_playwright() as p:
         if page.query_selector('[data-action=revisions-encore]'):
             capt(page, 'R-fin'); page.click('[data-action=revisions-encore]')
         else: break
-        if sessions > 20: erreurs.append('Trop de sessions de révision'); break
-    if vus < total_q: erreurs.append(f'Révisions : {vus} questions jouées sur {total_q}')
+        if sessions > 60: erreurs.append('Trop de sessions de révision'); break
+        if os.environ.get('SESSIONS_MAX') and sessions >= int(os.environ['SESSIONS_MAX']): break
+    if not os.environ.get('SESSIONS_MAX') and vus < total_q: erreurs.append(f'Révisions : {vus} questions jouées sur {total_q}')
     etat = page.evaluate('window.__bouchees.etat()')
     dues = [k for k, v in etat['cartes'].items() if v['due'] <= time.time() * 1000]
-    if dues: erreurs.append(f'{len(dues)} cartes encore dues après les révisions')
-    ratees = [v for v in etat['cartes'].values() if v.get('oublis')]
-    reussies = [v for v in etat['cartes'].values() if not v.get('oublis')]
+    # une carte ratée revient au bout de 10 min : normal si le test dure longtemps
+    anormales = [k for k in dues if not etat['cartes'][k].get('oublis')]
+    if anormales and not os.environ.get('SESSIONS_MAX'): erreurs.append(f'{len(anormales)} cartes encore dues après les révisions')
+    page.evaluate("() => { const e = window.__bouchees.etat(); for (const k in e.cartes) if (e.cartes[k].due <= Date.now()) e.cartes[k].due = Date.now() + 3600000; localStorage.setItem('dietacademie-progression-v1', JSON.stringify(e)); }")
+    ratees = [v for v in etat['cartes'].values() if v.get('oublis') and 'der' in v]
+    reussies = [v for v in etat['cartes'].values() if not v.get('oublis') and 'der' in v]
     jours_ratees = max((v['due'] - v['der']) / 86400000 for v in ratees)
     jours_reussies = min((v['due'] - v['der']) / 86400000 for v in reussies)
     if jours_ratees > 0.1 or jours_reussies < 1: erreurs.append(f'Intervalles FSRS suspects : ratées {jours_ratees:.2f} j, réussies {jours_reussies:.2f} j')

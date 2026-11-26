@@ -1,0 +1,159 @@
+{
+ "cours": "bc-meta-glucides-2",
+ "items": [
+  {
+   "fiche": "K",
+   "texte": "Dégradation oxydative complète, matrice, amphibolique",
+   "mots": [
+    "matrice",
+    "amphibolique"
+   ]
+  },
+  {
+   "fiche": "K",
+   "texte": "Pyruvate dH irréversible, vitamine B1, acidose lactique",
+   "mots": [
+    "pyruvate déshydrogénase",
+    "B1",
+    "acidose lactique"
+   ]
+  },
+  {
+   "fiche": "K",
+   "texte": "8 réactions, condensation, 3 irréversibles : 1, 3, 4",
+   "mots": [
+    "oxaloacétate",
+    "irréversible"
+   ]
+  },
+  {
+   "fiche": "K",
+   "texte": "3 NADH + 1 FADH₂ + 1 GTP = 12 ATP ; 38 ATP ; aérobie",
+   "mots": [
+    "12",
+    "38",
+    "aérobie"
+   ]
+  },
+  {
+   "fiche": "P",
+   "texte": "NADPH + ribose-5-P, pas d'ATP",
+   "mots": [
+    "NADPH",
+    "ribose-5-P"
+   ]
+  },
+  {
+   "fiche": "P",
+   "texte": "G6PD ; équation",
+   "mots": [
+    "G6PD",
+    "CO₂"
+   ]
+  },
+  {
+   "fiche": "P",
+   "texte": "Transcétolase, transaldolase",
+   "mots": [
+    "transcétolase",
+    "transaldolase"
+   ]
+  },
+  {
+   "fiche": "P",
+   "texte": "NADPH freine la G6PD",
+   "mots": [
+    "freine"
+   ]
+  },
+  {
+   "fiche": "P",
+   "texte": "Globules rouges : glutathion, H₂O₂, hémolyse",
+   "mots": [
+    "glutathion",
+    "H₂O₂",
+    "hémolyse"
+   ]
+  },
+  {
+   "fiche": "F",
+   "texte": "GLUT5, indépendant de l'insuline",
+   "mots": [
+    "GLUT5",
+    "insuline"
+   ]
+  },
+  {
+   "fiche": "F",
+   "texte": "Fructokinase, aldolase, triose kinase",
+   "mots": [
+    "fructokinase",
+    "triose kinase"
+   ]
+  },
+  {
+   "fiche": "F",
+   "texte": "Tissu adipeux : hexokinase → fructose-6-P",
+   "mots": [
+    "tissu adipeux",
+    "fructose-6-P"
+   ]
+  },
+  {
+   "fiche": "F",
+   "texte": "Même bilan que le glucose",
+   "mots": [
+    "le même"
+   ]
+  },
+  {
+   "fiche": "F",
+   "texte": "Rapide, sans insuline, acides gras",
+   "mots": [
+    "rapide",
+    "VLDL"
+   ]
+  },
+  {
+   "fiche": "G",
+   "texte": "Galactose → foie",
+   "mots": [
+    "galactose",
+    "foie"
+   ]
+  },
+  {
+   "fiche": "G",
+   "texte": "Galactokinase, transférase, phosphoglucomutase",
+   "mots": [
+    "galactokinase",
+    "transférase",
+    "phosphoglucomutase"
+   ]
+  },
+  {
+   "fiche": "G",
+   "texte": "Épimérase",
+   "mots": [
+    "épimérase"
+   ]
+  },
+  {
+   "fiche": "G",
+   "texte": "Lactose synthase",
+   "mots": [
+    "lactose synthase"
+   ]
+  },
+  {
+   "fiche": "G",
+   "texte": "Galactosémie, galactitol, cataracte, éviction",
+   "mots": [
+    "galactosémie",
+    "galactitol",
+    "cataracte",
+    "éviction"
+   ]
+  }
+ ]
+}
