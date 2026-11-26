@@ -73,12 +73,19 @@ export default {
             { titre: 'Biochimie structurale', cours: [
               { id: 'bc-chimie', titre: 'Rappels de chimie, eau et minéraux', emoji: '⚛️', src: 'bc-chimie' },
               { id: 'bc-glucides', titre: 'Les glucides : structure', emoji: '🍞', src: 'bc-glucides' },
-              { id: 'bc-lipides', titre: 'Les lipides : structure', emoji: '🧈', src: 'bc-lipides' }
+              { id: 'bc-lipides', titre: 'Les lipides : structure', emoji: '🧈', src: 'bc-lipides' },
+              { id: 'bc-proteines', titre: 'Les protéines : structure', emoji: '🥚', src: 'bc-proteines' },
+              { id: 'bc-acides-nucleiques', titre: 'Les acides nucléiques', emoji: '🧬', src: 'bc-acides-nucleiques' }
+            ] },
+            { titre: 'Enzymologie', cours: [
+              { id: 'bc-enzymes', titre: 'Les enzymes', emoji: '🔑', src: 'bc-enzymes' },
+              { id: 'bc-vitamines', titre: 'Coenzymes et vitamines', emoji: '🍊', src: 'bc-vitamines' }
             ] },
             { titre: 'Métabolisme', cours: [
               { id: 'bc-meta-glucides-1', titre: 'Métabolisme des glucides (1) : digestion et glycolyse', emoji: '🔥', src: 'bc-meta-glucides-1' },
               { id: 'bc-meta-glucides-2', titre: 'Métabolisme des glucides (2) : Krebs et autres voies', emoji: '🔄', src: 'bc-meta-glucides-2' },
-              { id: 'bc-meta-lipides', titre: 'Métabolisme des lipides', emoji: '🥑', src: 'bc-meta-lipides' }
+              { id: 'bc-meta-lipides', titre: 'Métabolisme des lipides', emoji: '🥑', src: 'bc-meta-lipides' },
+              { id: 'bc-meta-proteines', titre: 'Métabolisme des acides aminés', emoji: '🧪', src: 'bc-meta-proteines' }
             ] }
           ]
         },
