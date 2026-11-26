@@ -1,0 +1,387 @@
+{
+ "cours": "bc-meta-lipides",
+ "items": [
+  {
+   "fiche": 1,
+   "texte": "Lipoprotéines sans liaison covalente ; AG libres : albumine",
+   "mots": [
+    "covalente",
+    "albumine"
+   ]
+  },
+  {
+   "fiche": 1,
+   "texte": "Cœur hydrophobe / surface polaire",
+   "mots": [
+    "cœur",
+    "surface"
+   ]
+  },
+  {
+   "fiche": 1,
+   "texte": "Densité : chylo < VLDL < IDL < LDL < HDL",
+   "mots": [
+    "densité",
+    "chylomicrons",
+    "hdl"
+   ]
+  },
+  {
+   "fiche": 1,
+   "texte": "Apo A, B48, B100, C, E",
+   "mots": [
+    "apo a",
+    "b48",
+    "b100",
+    "apo c",
+    "apo e"
+   ]
+  },
+  {
+   "fiche": 1,
+   "texte": "Chylomicrons : exogènes, 90 % TG, lymphe, 1 h",
+   "mots": [
+    "90 %",
+    "lymphe",
+    "1 heure"
+   ]
+  },
+  {
+   "fiche": 1,
+   "texte": "LPL insulino-dépendante dans le tissu adipeux, pas le muscle",
+   "mots": [
+    "lpl",
+    "insuline",
+    "muscle"
+   ]
+  },
+  {
+   "fiche": 1,
+   "texte": "VLDL → IDL → LDL",
+   "mots": [
+    "vldl",
+    "idl",
+    "ldl",
+    "60 %"
+   ]
+  },
+  {
+   "fiche": 1,
+   "texte": "HDL transport inverse, LCAT",
+   "mots": [
+    "transport inverse",
+    "lcat"
+   ]
+  },
+  {
+   "fiche": 1,
+   "texte": "LDL oxydés → macrophages → spumeuses → athérome",
+   "mots": [
+    "macrophages",
+    "spumeuses",
+    "athérome"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "Lipolyse, lipase HS",
+   "mots": [
+    "lipase hormono-sensible",
+    "glycérol"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "Glucagon, adrénaline → AMPc ; insuline inhibe",
+   "mots": [
+    "glucagon",
+    "adrénaline",
+    "phosphoryl"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "AG → albumine ; glycérol → néoglucogenèse",
+   "mots": [
+    "albumine",
+    "néoglucogenèse"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "Activation 2 ATP ; carnitine",
+   "mots": [
+    "2 atp",
+    "cat i",
+    "translocase",
+    "cat ii"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "Lynen",
+   "mots": [
+    "oxydation",
+    "hydratation",
+    "thiolyse"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "C16 : 7 tours, 129 ATP",
+   "mots": [
+    "7 tours",
+    "129 atp"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "Malonyl-CoA inhibe CAT I",
+   "mots": [
+    "malonyl-coa",
+    "cat i"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "Lipogenèse : citrate → acétyl-CoA → malonyl-CoA → palmitate",
+   "mots": [
+    "citrate",
+    "palmitate"
+   ]
+  },
+  {
+   "fiche": 2,
+   "texte": "8 acétyl-CoA + 7 ATP + 14 NADPH ; insuline",
+   "mots": [
+    "14 nadph",
+    "insuline"
+   ]
+  },
+  {
+   "fiche": 3,
+   "texte": "3 corps cétoniques",
+   "mots": [
+    "acétoacétate",
+    "β-hydroxybutyrate",
+    "acétone"
+   ]
+  },
+  {
+   "fiche": 3,
+   "texte": "Cétogenèse : foie, matrice",
+   "mots": [
+    "foie",
+    "matrice mitochondriale"
+   ]
+  },
+  {
+   "fiche": 3,
+   "texte": "Cause : oxaloacétate ↓",
+   "mots": [
+    "oxaloacétate"
+   ]
+  },
+  {
+   "fiche": 3,
+   "texte": "HMG-CoA lyase",
+   "mots": [
+    "hmg-coa",
+    "hmg-coa lyase"
+   ]
+  },
+  {
+   "fiche": 3,
+   "texte": "Cétolyse : jamais le foie",
+   "mots": [
+    "succinyl-coa transférase",
+    "cerveau"
+   ]
+  },
+  {
+   "fiche": 3,
+   "texte": "Acétoacétyl-CoA → 2 acétyl-CoA",
+   "mots": [
+    "2 acétyl-coa",
+    "succinyl-coa"
+   ]
+  },
+  {
+   "fiche": 3,
+   "texte": "Cerveau 60-70 % ; hématies glucose",
+   "mots": [
+    "60 à 70 %",
+    "hématies"
+   ]
+  },
+  {
+   "fiche": 3,
+   "texte": "Insuline anticétogène",
+   "mots": [
+    "anticétogène"
+   ]
+  },
+  {
+   "fiche": 3,
+   "texte": "Acidocétose",
+   "mots": [
+    "acidocétose",
+    "haleine fruitée",
+    "type 1"
+   ]
+  },
+  {
+   "fiche": 4,
+   "texte": "Lipogenèse : foie, tissu adipeux, cytosol, après repas",
+   "mots": [
+    "cytosol",
+    "foie"
+   ]
+  },
+  {
+   "fiche": 4,
+   "texte": "Besoins",
+   "mots": [
+    "acétyl-coa",
+    "nadph"
+   ]
+  },
+  {
+   "fiche": 4,
+   "texte": "Navette citrate",
+   "mots": [
+    "citrate",
+    "navette"
+   ]
+  },
+  {
+   "fiche": 4,
+   "texte": "NADPH : enzyme malique + pentoses",
+   "mots": [
+    "enzyme malique",
+    "pentoses phosphates"
+   ]
+  },
+  {
+   "fiche": 4,
+   "texte": "ACC biotine",
+   "mots": [
+    "acétyl-coa carboxylase",
+    "biotine"
+   ]
+  },
+  {
+   "fiche": 4,
+   "texte": "AG synthase ACP",
+   "mots": [
+    "acp",
+    "condensation",
+    "déshydratation"
+   ]
+  },
+  {
+   "fiche": 4,
+   "texte": "7 tours → palmitate",
+   "mots": [
+    "14",
+    "palmitique"
+   ]
+  },
+  {
+   "fiche": 4,
+   "texte": "Élongases, désaturases Δ9",
+   "mots": [
+    "élongase",
+    "désaturase",
+    "δ9"
+   ]
+  },
+  {
+   "fiche": 4,
+   "texte": "ACC régulation",
+   "mots": [
+    "citrate",
+    "palmitoyl-coa",
+    "glucagon"
+   ]
+  },
+  {
+   "fiche": 5,
+   "texte": "80 % endogène, 800 mg, 200 mg",
+   "mots": [
+    "80 %",
+    "800 mg",
+    "200 mg"
+   ]
+  },
+  {
+   "fiche": 5,
+   "texte": "Cytosol puis RE lisse",
+   "mots": [
+    "cytosol",
+    "réticulum"
+   ]
+  },
+  {
+   "fiche": 5,
+   "texte": "Enchaînement",
+   "mots": [
+    "mévalonate",
+    "ipp",
+    "squalène",
+    "lanostérol"
+   ]
+  },
+  {
+   "fiche": 5,
+   "texte": "Réductase statines 18",
+   "mots": [
+    "hmg-coa réductase",
+    "statines",
+    "18"
+   ]
+  },
+  {
+   "fiche": 5,
+   "texte": "ACAT, LCAT, estérase",
+   "mots": [
+    "acat",
+    "lcat",
+    "cholestérol estérase"
+   ]
+  },
+  {
+   "fiche": 5,
+   "texte": "Rétrocontrôle",
+   "mots": [
+    "récepteurs aux ldl",
+    "acat"
+   ]
+  },
+  {
+   "fiche": 5,
+   "texte": "Insuline, glucagon, T3/T4",
+   "mots": [
+    "déphosphorylation",
+    "phosphorylation",
+    "hypothyroïdie"
+   ]
+  },
+  {
+   "fiche": 5,
+   "texte": "Alimentation",
+   "mots": [
+    "saturés",
+    "fibres solubles"
+   ]
+  },
+  {
+   "fiche": 5,
+   "texte": "Élimination bile, 7α-hydroxylase",
+   "mots": [
+    "acides biliaires",
+    "7α-hydroxylase"
+   ]
+  }
+ ]
+}

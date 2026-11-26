@@ -140,7 +140,7 @@ with sync_playwright() as p:
     if anormales and not os.environ.get('SESSIONS_MAX'): erreurs.append(f'{len(anormales)} cartes encore dues après les révisions')
     page.evaluate("() => { const e = window.__bouchees.etat(); for (const k in e.cartes) if (e.cartes[k].due <= Date.now()) e.cartes[k].due = Date.now() + 3600000; localStorage.setItem('dietacademie-progression-v1', JSON.stringify(e)); }")
     ratees = [v for v in etat['cartes'].values() if v.get('oublis') and 'der' in v]
-    reussies = [v for v in etat['cartes'].values() if not v.get('oublis') and 'der' in v]
+    reussies = [v for v in etat['cartes'].values() if not v.get('oublis') and 'der' in v and v['due'] > time.time() * 1000]
     jours_ratees = max((v['due'] - v['der']) / 86400000 for v in ratees)
     jours_reussies = min((v['due'] - v['der']) / 86400000 for v in reussies)
     if jours_ratees > 0.1 or jours_reussies < 1: erreurs.append(f'Intervalles FSRS suspects : ratées {jours_ratees:.2f} j, réussies {jours_reussies:.2f} j')

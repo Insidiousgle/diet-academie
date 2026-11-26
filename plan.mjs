@@ -72,11 +72,13 @@ export default {
           sections: [
             { titre: 'Biochimie structurale', cours: [
               { id: 'bc-chimie', titre: 'Rappels de chimie, eau et minéraux', emoji: '⚛️', src: 'bc-chimie' },
-              { id: 'bc-glucides', titre: 'Les glucides : structure', emoji: '🍞', src: 'bc-glucides' }
+              { id: 'bc-glucides', titre: 'Les glucides : structure', emoji: '🍞', src: 'bc-glucides' },
+              { id: 'bc-lipides', titre: 'Les lipides : structure', emoji: '🧈', src: 'bc-lipides' }
             ] },
             { titre: 'Métabolisme', cours: [
               { id: 'bc-meta-glucides-1', titre: 'Métabolisme des glucides (1) : digestion et glycolyse', emoji: '🔥', src: 'bc-meta-glucides-1' },
-              { id: 'bc-meta-glucides-2', titre: 'Métabolisme des glucides (2) : Krebs et autres voies', emoji: '🔄', src: 'bc-meta-glucides-2' }
+              { id: 'bc-meta-glucides-2', titre: 'Métabolisme des glucides (2) : Krebs et autres voies', emoji: '🔄', src: 'bc-meta-glucides-2' },
+              { id: 'bc-meta-lipides', titre: 'Métabolisme des lipides', emoji: '🥑', src: 'bc-meta-lipides' }
             ] }
           ]
         },

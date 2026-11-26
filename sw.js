@@ -1,6 +1,6 @@
 /* Diét'Académie — service worker (fonctionnement hors ligne)
    À chaque mise à jour, on change VERSION pour rafraîchir le cache. */
-var VERSION = 'dietacademie-2026-11-15c';
+var VERSION = 'dietacademie-2026-11-26a';
 var COQUILLE = ['./', 'index.html', 'style.css', 'app.js', 'manifest.webmanifest', 'icone.svg', 'icone-192.png', 'icone-512.png', 'catalogue.json', 'nunito-latin-500-normal.woff2', 'nunito-latin-600-normal.woff2', 'nunito-latin-700-normal.woff2', 'nunito-latin-800-normal.woff2', 'nunito-latin-900-normal.woff2'];
 
 self.addEventListener('install', function (e) {
